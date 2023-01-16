@@ -1,12 +1,13 @@
 /*
 Copy the header to a source file, compile the source, and remove the temporary
 source file.
+
 a=set_volume; cp $a.h $a.c && gcc -o $a -Dtest_main $a.c -lasound && rm $a.c
 */
 
-#include "stdio_h.h"
-#include "stdlib_h.h"
-#include "alsa_asoundlib_h.h"
+#include "header_guards/stdio_h.h"
+#include "header_guards/stdlib_h.h"
+#include "header_guards/alsa_asoundlib_h.h"
 
 static void error_close_exit(char* errmsg, int err, snd_mixer_t* h_mixer)
 {

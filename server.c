@@ -14,16 +14,16 @@ gcc -Wall -g -o server server.c -lasound
 
 /* Use guarded header files.
  */
-#include "stdio_h.h"
-#include "stdlib_h.h"
-#include "errno_h.h"
-#include "string_h.h"
-#include "sys_types_h.h"
-#include "sys_socket_h.h"
-#include "arpa_inet_h.h"
-#include "netinet_in_h.h"
-#include "unistd_h.h"
-#include "time_h.h"
+#include "header_guards/stdio_h.h"
+#include "header_guards/stdlib_h.h"
+#include "header_guards/errno_h.h"
+#include "header_guards/string_h.h"
+#include "header_guards/sys_types_h.h"
+#include "header_guards/sys_socket_h.h"
+#include "header_guards/arpa_inet_h.h"
+#include "header_guards/netinet_in_h.h"
+#include "header_guards/unistd_h.h"
+#include "header_guards/time_h.h"
 #include "msleep.h"
 #include "set_volume.h"
 

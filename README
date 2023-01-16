@@ -1,31 +1,40 @@
-A (simple) throttling UDP server for volume control with the ALSA C library.
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
 
-Linux only.
+BRIEF
+    A (simple) throttling UDP server for volume control with the ALSA C library.
 
-Not including the HEADER GUARDS (*_h.h), the *.h and *.c files can all be used
-with the gcc commands listed in the first few lines in the file to produce a
-command line tool that can be used to test the code in that file. Some of these
-command line tools are useful on their own, like "msleep" and "set-volume".
+    Linux only.
 
-Command-line tools:
+SERVER
+
+    make
+
+ALL CLI TOOLS
+
+    make prod
+
+COMMAND-LINE TOOLS
 
     * server - UDP server (volumectl) controls volume with ALSA
 
     * client - UDP client, updates the volume by messaging the volumectl server
 
-    * set-volume - set the volume using ALSA
+    * set_volume - set the volume using ALSA
 
     * msleep - sleep for a number of milliseconds
 
-You can also use
+    * You can also use
 
-    node client.js <VOLUME>
+            node client.js <VOLUME>
 
 to update the volume.
 
-You can move the system unit file into the right directory (probably), but first
-creating the right directory if it doesn't exist, with the following
-commands:
+SYSTEMD
 
 mkdir -p /etc/systemd/system && mv volumectl.service /etc/systemd/system
  
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
+ # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
