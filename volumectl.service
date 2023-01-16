@@ -1,0 +1,11 @@
+[Unit]
+Description = A unix datagram socket that controls the volume
+After = multi-user.target
+
+[Service]
+Type = simple
+ExecStart = su <INSERT-USERNAME-WITH-AUDIO-PERMIS-HERE> -c /usr/local/bin/vctl
+Restart = always
+
+[Install]
+WantedBy = multi-user.target
