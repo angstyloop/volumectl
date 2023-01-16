@@ -14,18 +14,18 @@ gcc -Wall -g -o server server.c -lasound
 
 /* Use guarded header files.
  */
-#include "header_guards/stdio_h.h"
-#include "header_guards/stdlib_h.h"
-#include "header_guards/errno_h.h"
-#include "header_guards/string_h.h"
-#include "header_guards/sys_types_h.h"
-#include "header_guards/sys_socket_h.h"
-#include "header_guards/arpa_inet_h.h"
-#include "header_guards/netinet_in_h.h"
-#include "header_guards/unistd_h.h"
-#include "header_guards/time_h.h"
-#include "msleep.h"
-#include "set_volume.h"
+#include "../include/header_guards/stdio_h.h"
+#include "../include/header_guards/stdlib_h.h"
+#include "../include/header_guards/errno_h.h"
+#include "../include/header_guards/string_h.h"
+#include "../include/header_guards/sys_types_h.h"
+#include "../include/header_guards/sys_socket_h.h"
+#include "../include/header_guards/arpa_inet_h.h"
+#include "../include/header_guards/netinet_in_h.h"
+#include "../include/header_guards/unistd_h.h"
+#include "../include/header_guards/time_h.h"
+#include "../include/msleep.h"
+#include "../include/set_volume.h"
 
 /* Path to socket. You pick the name.
  * The OS creates the file for you.

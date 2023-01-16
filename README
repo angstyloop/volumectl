@@ -13,9 +13,17 @@ SERVER
 
 ALL CLI TOOLS
 
-    make prod
+    make dev
 
-COMMAND-LINE TOOLS
+REMOVE BINARIES
+
+    make clean
+
+INSTALL volumectl SERVICE
+
+    make install
+
+DESCRIPTION OF COMMAND-LINE TOOLS
 
     * server - UDP server (volumectl) controls volume with ALSA
 
@@ -25,16 +33,12 @@ COMMAND-LINE TOOLS
 
     * msleep - sleep for a number of milliseconds
 
-    * You can also use
+    * You can also message the server with the Node.js UDP volumectl client
 
             node client.js <VOLUME>
 
-to update the volume.
+      to update the volume.
 
-SYSTEMD
-
-mkdir -p /etc/systemd/system && mv volumectl.service /etc/systemd/system
- 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
  # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
   # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #

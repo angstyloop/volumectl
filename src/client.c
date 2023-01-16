@@ -20,15 +20,15 @@ gcc -Wall -g -o client client.c
 ./client 100
  */
 
-#include "header_guards/stdio_h.h"
-#include "header_guards/stdlib_h.h"
-#include "header_guards/errno_h.h"
-#include "header_guards/string_h.h"
-#include "header_guards/sys_types_h.h"
-#include "header_guards/sys_socket_h.h"
-#include "header_guards/unistd_h.h"
-#include "header_guards/arpa_inet_h.h"
-#include "header_guards/netinet_in_h.h"
+#include "../include/header_guards/stdio_h.h"
+#include "../include/header_guards/stdlib_h.h"
+#include "../include/header_guards/errno_h.h"
+#include "../include/header_guards/string_h.h"
+#include "../include/header_guards/sys_types_h.h"
+#include "../include/header_guards/sys_socket_h.h"
+#include "../include/header_guards/unistd_h.h"
+#include "../include/header_guards/arpa_inet_h.h"
+#include "../include/header_guards/netinet_in_h.h"
 
 #define SERVER_PORT 6666 
 #define CLIENT_BUF_SIZE 256
