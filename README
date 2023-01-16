@@ -21,7 +21,12 @@ REMOVE BINARIES
 
 INSTALL volumectl SERVICE
 
-    make install
+    1. Modify the volumectl.service file, using a real username instead of the
+       placeholder <YOUR-USER-NAME>.
+
+    2. Then run:
+
+           make install
 
 DESCRIPTION OF COMMAND-LINE TOOLS
 
@@ -34,8 +39,9 @@ DESCRIPTION OF COMMAND-LINE TOOLS
     * msleep - sleep for a number of milliseconds
 
     * You can also message the server with the Node.js UDP volumectl client
+      by running:
 
-            node client.js <VOLUME>
+          node client.js <VOLUME>
 
       to update the volume.
 

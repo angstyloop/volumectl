@@ -35,7 +35,8 @@ clean: bin/client bin/set_volume bin/msleep
 	rm -f bin/*
 
 install:
-	ln -s -f bin/server /usr/local/bin/volumectl && \
+	systemctl stop volumectl && \
+	cp bin/server /usr/local/bin/volumectl && \
 	mkdir -p /etc/systemd/system && \
 	cp volumectl.service /etc/systemd/system && \
 	systemctl daemon-reload && \

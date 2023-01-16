@@ -1,6 +1,2 @@
-client
-server
-set_volume
-msleep
-set_volume.c
-tpf_unix_sock.server
+bin/*
+include/*.c

@@ -1,10 +1,10 @@
 [Unit]
-Description = A unix datagram socket that controls the volume
+Description = volumectl
 After = multi-user.target
 
 [Service]
 Type = simple
-ExecStart = su <INSERT-USERNAME-WITH-AUDIO-PERMISSION-HERE> -c /usr/local/bin/volumectl
+ExecStart = su <YOUR-USER-NAME> -c /usr/local/bin/volumectl
 Restart = always
 
 [Install]
